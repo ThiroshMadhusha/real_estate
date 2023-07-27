@@ -256,6 +256,7 @@ body.dark-theme{
     padding: 1rem 3rem;
     border-radius: 1.25rem;
     transition: .4s;
+    border: 2px solid var(--border-color);
   }
 
   .nav__list{
@@ -444,22 +445,27 @@ body.dark-theme{
   opacity: 1;
 }
 
-/*=============== POPULAR ===============*/
+
+
+/*=============== POPULAR CARD SECTION===============*/
+
 .popular__container{
   padding: 1rem 0 5rem;
 }
 
 .popular__card{
-  width: 350px;
+  width: 100%;
   background-color: var(--container-color);
   padding: .5rem .5rem 1rem;
   border-radius: 1rem;
   margin: 0 auto;
   transition: .5s;
-
+  border: 2px solid var(--border-color);
 }
 
 .popular__img{
+  width: 100%;
+  height: 250px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -519,6 +525,7 @@ body.dark-theme{
 
 /*=============== VALUE ===============*/
 /* row gap with the 4 cards */
+
 .value__container{
   row-gap: 1rem;
 }
@@ -954,6 +961,7 @@ body.dark-theme{
   .popular__card{
     width: 230px;
     padding: .5rem .5rem .75rem;
+    border: 2px solid var(--first-color-lighten);
   }
 
   .value__img,
@@ -993,6 +1001,9 @@ body.dark-theme{
     grid-template-columns: repeat(2, 250px);
     justify-content: center;
   }
+  .popular__card{
+    border: 2px solid var(--first-color-lighten);
+  }
 
   .footer__content{
     grid-template-columns: repeat(3, max-content);
@@ -1031,6 +1042,10 @@ body.dark-theme{
     align-items: center;
   }
 
+  .popular__card{
+    border: 2px solid var(--first-color-lighten);
+  }
+
   .contact__card{
     grid-template-columns: repeat(2, 200px);
     justify-content: center;
@@ -1048,6 +1063,22 @@ body.dark-theme{
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
   }
+
+  .footer__title{
+    margin-bottom: 1.5rem;
+
+  }
+  .footer__links{
+    row-gap: 1rem;
+  }
+
+  .footer__info{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+
   
 }
 
@@ -1115,7 +1146,7 @@ body.dark-theme{
     padding-bottom: 0;
   }
   .home__container{
-    padding-top: 5rem;
+    padding-top: 3rem;
     column-gap: 2rem;
   }
   .home__data{
@@ -1135,13 +1166,13 @@ body.dark-theme{
   .home__orbe{
     width: 504px;
     height: 611px;
-    background-repeat: 256px 256px 0 0;
+    border-radius: 256px 256px 0 0;
   }
 
   .home__img{
     width: 472px;
     height: 620px;
-    background-repeat: 236px 236px 12px 12px;
+    border-radius: 236px 236px 12px 12px;
     border: -2.5rem;
   }
 
@@ -1165,20 +1196,20 @@ body.dark-theme{
   .value__container,
   .contact__container{
     align-items: flex-start;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
   }
 
   .value__orbe,
   .contact__orbe{
-    width: 491px;
-    height: 631px;
+    width: 481px;
+    height: 580px;
     border-radius: 258px 258px 16px 16px;
   }
 
   .value__img,
   .contact__img{
-    width: 451px;
-    height: 591px;
+    width: 441px;
+    height: 541px;
     border-radius: 238px 238px 12px 12px;
   }
 
@@ -1262,4 +1293,72 @@ body.dark-theme{
 
 }
 
+/* center the website elements */
+@media screen and (min-width: 1040px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__container{
+    /* padding-top: 3rem; */
+    column-gap: 4rem;
+  }
+}
+
 /* For 2K & 4K resolutions */
+@media screen and (min-width: 1048px) {
+  body{
+    zoom: 0.9;
+  }
+  
+}
+@media screen and (min-width: 1400px) {
+  body{
+    zoom: 1.2;
+  }
+  
+}
+@media screen and (min-width: 1800px) {
+  body{
+    zoom: 1.5;
+  }
+  
+}
+@media screen and (min-width: 2048px) {
+  body{
+    zoom: 1.7;
+  }
+  
+}
+@media screen and (min-width: 2400px) {
+  body{
+    zoom: 2;
+  }
+  
+}
+@media screen and (min-width: 2700px) {
+  body{
+    zoom: 2.2;
+  }
+  
+}
+@media screen and (min-width: 3048px) {
+  body{
+    zoom: 2.5;
+  }
+  
+}
+@media screen and (min-width: 3448px) {
+  body{
+    zoom: 2.9;
+  }
+  
+}
+
+@media screen and (min-width: 3840px) {
+  body{
+    zoom: 3.1;
+  }
+  
+}
